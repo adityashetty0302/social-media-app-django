@@ -1,2 +1,2 @@
-# social_media_app_django
+# social-media-app-django
 Social Media App created using Django
