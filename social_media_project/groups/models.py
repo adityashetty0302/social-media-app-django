@@ -11,7 +11,7 @@ user = get_user_model()
 register = template.library()
 
 
-class Groups(models.Model):
+class Group(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(allow_unicode=True, unique=True)
     description = models.TextField(blank=True, default='')
@@ -34,7 +34,7 @@ class Groups(models.Model):
 
 
 class GroupMember(models.Model):
-    group = models.ForeignKey(Groups, related_name='memberships',
+    group = models.ForeignKey(Group, related_name='memberships',
                               on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='user_groups',
                              on_delete=models.CASCADE)

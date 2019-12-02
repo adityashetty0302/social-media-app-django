@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9a2a21cb62cc1e51ae532d54e73b861a4fd6e1d6f28cf6f08580cb52acd57e14"
+            "sha256": "014055e87444031227ce31b06420027842a30cbf9e7fae169c5968e428a5ccab"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -69,6 +69,14 @@
             "index": "pypi",
             "version": "==11.1.0"
         },
+        "django-braces": {
+            "hashes": [
+                "sha256:a457d74ea29478123c0c4652272681b3cea0bf1232187fd9f9b6f1d97d32a890",
+                "sha256:ba68e98b817c6f01d71d10849f359979617b3fe4cefb7f289adefddced092ddc"
+            ],
+            "index": "pypi",
+            "version": "==1.13.0"
+        },
         "misaka": {
             "hashes": [
                 "sha256:62f35254550095d899fc2ab8b33e156fc5e674176f074959cbca43cf7912ecd7"
@@ -78,6 +86,7 @@
         },
         "pycparser": {
             "hashes": [
+                "sha256:9b20f1466bb49da65565d9d6d74b27b28eb4b8b1b2445fea526e814628242d18",
                 "sha256:a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
             ],
             "version": "==2.19"
