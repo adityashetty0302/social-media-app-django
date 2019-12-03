@@ -7,8 +7,8 @@ from django import template
 
 # Create your models here.
 
-user = get_user_model()
-register = template.library()
+User = get_user_model()
+register = template.Library()
 
 
 class Group(models.Model):
@@ -27,7 +27,7 @@ class Group(models.Model):
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse("groups:single", kwargs={"slug", self.slug})
+        return reverse("groups:single", kwargs={"slug": self.slug})
 
     class Meta:
         ordering = ["name"]
