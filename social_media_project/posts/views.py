@@ -12,7 +12,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-class PostList(SelectRelatedMixin, generic.CreateView):
+class PostList(SelectRelatedMixin, generic.ListView):
     model = models.Post
     select_related = ("user", "group")
 
