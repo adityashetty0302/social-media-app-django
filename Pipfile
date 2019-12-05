@@ -11,6 +11,7 @@ django-bootstrap3 = "*"
 misaka = "*"
 django-braces = "*"
 humanize = "*"
+django-humanize = "*"
 
 [requires]
 python_version = "3.6"
